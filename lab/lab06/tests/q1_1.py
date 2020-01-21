@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> # Make sure your probability is expressed as a decimal value
-          >>> np.isclose(pizza_prob, 0.7)
+          >>> number_cheese == 3
           True
           """,
           'hidden': False,

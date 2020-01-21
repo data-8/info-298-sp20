@@ -1,13 +1,13 @@
 test = {
-  'name': 'q2_3',
+  'name': '',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> true_statements
-          [1, 4]
+          >>> bootstrap_sampled_SD == 3
+          True
           """,
           'hidden': False,
           'locked': False

@@ -1,15 +1,25 @@
 test = {
-  'name': '',
+  'name': 'Question 1.3',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> abs(5.7 - np.std([simulate_observations() for _ in range(5000)])) < .2
+          >>> isinstance(most_murderous(1970).item(0), str)
           True
-          >>> abs(21.5 - np.mean([simulate_observations() for _ in range(5000)])) < .2
-          True
+          >>> len(most_murderous(1970))
+          5
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> list(most_murderous(1970))
+          ['North Carolina', 'Alaska', 'Florida', 'South Carolina', 'Georgia']
+          >>> list(most_murderous(1990))
+          ['California', 'Mississippi', 'Texas', 'New York', 'Louisiana']
           """,
           'hidden': False,
           'locked': False

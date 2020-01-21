@@ -1,17 +1,17 @@
 test = {
-  'name': 'Question',
+  'name': 'q2_3',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> np.round(example_errors.item(0), 2) == -22.43
-          True
+          >>> true_statements
+          [1, 4]
           """,
           'hidden': False,
           'locked': False
-        }
+        },
       ],
       'scored': True,
       'setup': '',

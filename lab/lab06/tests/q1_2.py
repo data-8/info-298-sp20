@@ -1,17 +1,17 @@
 test = {
-  'name': 'Question',
+  'name': '',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 10*10**9 <= first_guess_universe_age_years <= 20*10**9
+          >>> say_please == 'More please'
           True
           """,
           'hidden': False,
           'locked': False
-        }
+        },
       ],
       'scored': True,
       'setup': '',

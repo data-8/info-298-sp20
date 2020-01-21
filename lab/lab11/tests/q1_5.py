@@ -1,13 +1,13 @@
 test = {
-  'name': 'q1_5',
+  'name': '',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> max_estimate
-          135
+          >>> "%.2f" % round(r,2)
+          '0.90'
           """,
           'hidden': False,
           'locked': False

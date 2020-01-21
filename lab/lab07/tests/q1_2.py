@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> say_please == 'More please'
+          >>> 0 <= rough_success_chance <= 1
           True
           """,
           'hidden': False,

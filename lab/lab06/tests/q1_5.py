@@ -1,16 +1,12 @@
 test = {
-  'name': 'Question 1.1',
+  'name': '',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> # Please format your answer as a list of integers.
-          ... 
-          >>> type(extra_info) == list
-          True
-          >>> type(extra_info[0]) == int
+          >>> 2 < number_wow_reactions < 6
           True
           """,
           'hidden': False,
@@ -18,7 +14,8 @@ test = {
         },
         {
           'code': r"""
-          >>> sorted(extra_info) == [1, 3]
+          >>> # Incorrect value for number_wow_reactions
+          >>> number_wow_reactions == 4
           True
           """,
           'hidden': False,

@@ -6,20 +6,16 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> isinstance(most_murderous(1970).item(0), str)
-          True
-          >>> len(most_murderous(1970))
-          5
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> list(most_murderous(1970))
-          ['North Carolina', 'Alaska', 'Florida', 'South Carolina', 'Georgia']
-          >>> list(most_murderous(1990))
-          ['California', 'Mississippi', 'Texas', 'New York', 'Louisiana']
+          >>> death_penalty_murder_rates.num_rows
+          1936
+          >>> death_penalty_murder_rates.labels
+          ('State', 'Year', 'Population', 'Murder Rate')
+          >>> death_penalty_murder_rates.column(2).item(17)
+          3690000
+          >>> death_penalty_murder_rates.column(2).item(17)
+          3690000
+          >>> death_penalty_murder_rates.column(1).item(1738)
+          1982
           """,
           'hidden': False,
           'locked': False

@@ -1,12 +1,24 @@
 test = {
-  'name': '',
+  'name': 'Question 1.1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 12 <= modified_result <= 32
+          >>> # Please format your answer as a list of integers.
+          ... 
+          >>> type(extra_info) == list
+          True
+          >>> type(extra_info[0]) == int
+          True
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> sorted(extra_info) == [1, 3]
           True
           """,
           'hidden': False,

@@ -1,17 +1,25 @@
 test = {
-  'name': '',
+  'name': 'Question',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 0.58 <= chance_of_all_different <= 0.68
-          True
+          >>> convenience_sample.num_columns
+          11
           """,
           'hidden': False,
           'locked': False
         },
+        {
+          'code': r"""
+          >>> convenience_sample.num_rows
+          44
+          """,
+          'hidden': False,
+          'locked': False
+        }
       ],
       'scored': True,
       'setup': '',

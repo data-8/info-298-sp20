@@ -6,7 +6,9 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> spicy_nacho == 'Spicy!'
+          >>> abs(5.7 - np.std([simulate_observations() for _ in range(5000)])) < .2
+          True
+          >>> abs(21.5 - np.mean([simulate_observations() for _ in range(5000)])) < .2
           True
           """,
           'hidden': False,

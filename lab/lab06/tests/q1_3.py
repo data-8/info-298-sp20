@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> np.isclose(all_prob, 0.7 ** 4)
+          >>> spicy_nacho == 'Spicy!'
           True
           """,
           'hidden': False,

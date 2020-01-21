@@ -1,25 +1,26 @@
 test = {
-  'name': 'Question',
+  'name': 'Question 1.1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> # It looks like your answer is very far from the right one.
-          >>> not (abs(driving_start_time_hours - 5/3) > 4/9)
+          >>> a1 = np.array([1, 2, 3])
+          >>> a2 = np.array([3, 4, 5])
+          >>> a3 = np.array([9, 5, 4])
+          >>> np.isclose(distance_first_to_first, 0.14822770081404466)
           True
-          >>> # It looks like your answer is in the ballpark, but
-          >>> # not quite right.  Hint: Try finding a place where
-          >>> # the line intersects a crossing of two grid lines.
-          >>> not (1/9 < abs(driving_start_time_hours - 5/3) < 4/9)
+          >>> np.isclose(distance(a1, a2), 3.46410161513)
           True
-          >>> 14/9 <= driving_start_time_hours <= 16/9
+          >>> np.isclose(distance(a2, a3), 6.16441400296)
+          True
+          >>> np.isclose(distance(a1, a3), 8.60232526704)
           True
           """,
           'hidden': False,
           'locked': False
-        }
+        },
       ],
       'scored': True,
       'setup': '',

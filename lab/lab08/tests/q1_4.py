@@ -1,18 +1,13 @@
 test = {
-  'name': 'Question 2.4',
+  'name': 'Question 1.4',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> # There are several two-year changes for each state.
-          >>> num_changes != 50
-          True
-          >>> # The entire data set contains many states, not just 1.
-          >>> not(42 <= num_changes <= 44)
-          True
-          >>> 2000 <= num_changes <= 2200
+          >>> # You might have flipped the difference.
+          >>> ca_change > 0
           True
           """,
           'hidden': False,
@@ -20,7 +15,8 @@ test = {
         },
         {
           'code': r"""
-          >>> num_changes == 2100
+          >>> # You might have flipped the difference.
+          >>> np.isclose(np.round(ca_change), 726)
           True
           """,
           'hidden': False,

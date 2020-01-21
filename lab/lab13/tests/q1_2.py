@@ -1,21 +1,17 @@
 test = {
-  'name': '',
+  'name': 'Question',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> abs(sum(faithful_standard.column(0))) <= 1e-8
+          >>> 10*10**9 <= first_guess_universe_age_years <= 20*10**9
           True
-          >>> int(round(duration_std))
-          1
-          >>> int(round(wait_std))
-          14
           """,
           'hidden': False,
           'locked': False
-        },
+        }
       ],
       'scored': True,
       'setup': '',

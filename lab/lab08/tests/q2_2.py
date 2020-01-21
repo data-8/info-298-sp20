@@ -1,12 +1,16 @@
 test = {
-  'name': 'Question',
+  'name': 'Question 2.2',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> round(float(compute_statistics(full_data)[0]), 2) == 26.54
+          >>> changes_by_state.num_rows
+          50
+          >>> list(changes_by_state.row(0)) == ['Alabama', -6]
+          True
+          >>> list(changes_by_state.row(1)) == ['Alaska', -5]
           True
           """,
           'hidden': False,
@@ -14,8 +18,12 @@ test = {
         },
         {
           'code': r"""
-          >>> round(float(compute_statistics(full_data)[1]), 2) == 4269775.77
-          True
+          >>> int(max(changes_by_state.column(1)))
+          17
+          >>> int(min(changes_by_state.column(1)))
+          -11
+          >>> int(sum(changes_by_state.column(1)))
+          45
           """,
           'hidden': False,
           'locked': False

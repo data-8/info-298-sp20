@@ -6,23 +6,21 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> # Don't count cases where the number stays the same as either
-          >>> # an increase or a decrease.
-          >>> two_year_changes(make_array(10, 7, 12, 9, 13, 9, 11)) != 3
+          >>> non_death_penalty_murder_rates.num_rows
+          264
+          >>> non_death_penalty_murder_rates.labels
+          ('State', 'Year', 'Population', 'Murder Rate')
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> 0.25 <= run_test(non_death_penalty_murder_rates, 1971) <= 0.45
+          Test statistic 1971 to 1973 : 1
           True
-          >>> # Don't count cases where the number stays the same as either
-          >>> # an increase or a decrease.
-          >>> two_year_changes(make_array(10, 7, 12, 9, 13, 9, 11)) != 1
-          True
-          >>> # You might have flipped the difference.
-          >>> two_year_changes(make_array(10, 7, 12, 9, 13, 9, 11)) != -2
-          True
-          >>> two_year_changes(make_array(10, 7, 12, 9, 13, 9, 11))
-          2
-          >>> two_year_changes(ak.column('Murder rate in Alaska'))
-          -5
-          >>> two_year_changes(mn.column('Murder rate in Minnesota'))
-          6
+          >>> reject_null
+          False
           """,
           'hidden': False,
           'locked': False

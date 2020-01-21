@@ -1,15 +1,14 @@
 test = {
-  'name': '',
+  'name': 'q1_5',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> np.isclose(winning_prob, 0.4)
-          True
+          >>> max_estimate
+          135
           """,
-
           'hidden': False,
           'locked': False
         },

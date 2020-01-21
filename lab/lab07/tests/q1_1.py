@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> number_cheese == 3
+          >>> 12 <= modified_result <= 32
           True
           """,
           'hidden': False,

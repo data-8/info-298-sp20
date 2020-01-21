@@ -6,18 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> # You might have flipped the difference.
-          >>> ca_change > 0
-          True
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> # You might have flipped the difference.
-          >>> np.isclose(np.round(ca_change), 726)
-          True
+          >>> test_stat_72
+          22
           """,
           'hidden': False,
           'locked': False

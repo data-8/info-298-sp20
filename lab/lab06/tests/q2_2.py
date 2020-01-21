@@ -1,13 +1,13 @@
 test = {
-  'name': 'q2_1',
+  'name': '',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> one_resample.num_rows
-          17
+          >>> longer_than_five == 35453
+          True
           """,
           'hidden': False,
           'locked': False

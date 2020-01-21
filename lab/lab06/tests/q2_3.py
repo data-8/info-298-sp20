@@ -1,13 +1,13 @@
 test = {
-  'name': 'Question 2.2',
+  'name': '',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> we_conclude
-          2
+          >>> 0.58 <= chance_of_all_different <= 0.68
+          True
           """,
           'hidden': False,
           'locked': False

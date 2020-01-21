@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> bootstrap_sampled_SD == 3
+          >>> 1000 <= total_score <= 10000
           True
           """,
           'hidden': False,
