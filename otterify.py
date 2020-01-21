@@ -1,4 +1,7 @@
-# from glob import glob
+###########################################
+##### Otterifies Notebooks from Gofer #####
+###########################################
+
 import json
 import sys
 import nbformat
