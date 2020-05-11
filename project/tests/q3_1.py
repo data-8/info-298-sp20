@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> 0.0 <= distance_first_to_first <= 0.1
+          >>> 0.0 <= distance_first_to_second <= 0.1
           True
           """,
           'hidden': False,
